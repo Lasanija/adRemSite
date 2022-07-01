@@ -19,7 +19,7 @@
 
 <body>
     <nav id="navbar">
-        <div><a href="http://127.0.0.1:5500/"><img class="logo" src="img/logo.svg" alt="logo"></a></div>
+        <div><a href="index.html"><img class="logo" src="img/logo.svg" alt="logo"></a></div>
         <div class="burger-wrapper" id="burger-wrapper">
             <div class="burger" id="burger" title="menu"></div>
         </div>
@@ -106,11 +106,9 @@
                 </div>
             </div>
             <div class="navigation">
-                <!-- If we need pagination -->
+                <div class="swiper-button-prev1 btn-prev"></div>
                 <div class="swiper-pagination1"></div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev1"></div>
-                <div class="swiper-button-next1"></div>
+                <div class="swiper-button-next1 btn-next"></div>
             </div>
             <div class="swiper-info">
                 <h3>ЖК Тріумф</h3>
@@ -122,8 +120,11 @@
                     <img src="/img/sqare_icon.svg" alt="">
                     <p>Площа - 108м<sup>2</sup></p>
                 </div>
-                <div>
-                    <button class="btn">Деталі <img src="img/arr_down.svg" alt="arr_down"></button>
+                <button class="btn" id="details-btn">Деталі <img src="img/arr_down.svg" alt="arr_down"></button>
+                <div class="details">
+                    <p id="details">Даний проект починали з нульового циклу, робили
+                        стяжку і теплу підлогу. Деякі стіни виконані з водостійкої декоративної штукатурки, тому за потребми їх можна легко почистити.
+                        ОДним з побажань клієнтів було поєднання ванни та душу в одному санвузлі. Також реалізували в коридорі двері прихованого монтажу, що придало прихожій мінімалістичного стилю.</p>
                 </div>
             </div>
         </div>
@@ -172,13 +173,6 @@
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="img/project_2.5.avif" type="image/avif">
-                            <source srcset="img/project_2.5.webp" type="image/webp">
-                            <img src="img/project_2.5.jpg" alt="projects_img">
-                        </picture>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture>
                             <source srcset="img/project_2.6.avif" type="image/avif">
                             <source srcset="img/project_2.6.webp" type="image/webp">
                             <img src="img/project_2.6.jpg" alt="projects_img">
@@ -187,27 +181,262 @@
                 </div>
             </div>
             <div class="navigation">
-                <!-- If we need pagination -->
+                <div class="swiper-button-prev2 btn-prev"></div>
                 <div class="swiper-pagination2"></div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev2"></div>
-                <div class="swiper-button-next2"></div>
+                <div class="swiper-button-next2 btn-next"></div>
             </div>
             <div class="swiper-info">
-                <h3>ЖК Тріумф</h3>
+                <h3>ЖК Standart one</h3>
                 <div>
                     <img src="/img/room_icon.svg" alt="icon">
-                    <p>Кількість кімнат - 3</p>
+                    <p>Кількість кімнат - 1</p>
                 </div>
                 <div>
                     <img src="/img/sqare_icon.svg" alt="">
-                    <p>Площа - 108м<sup>2</sup></p>
+                    <p>Площа - 42м<sup>2</sup></p>
                 </div>
-                <div>
-                    <button class="btn">Деталі <img src="img/arr_down.svg" alt="arr_down"></button>
-                </div>
+                    <button class="btn" id="details-btn2">Деталі <img src="img/arr_down.svg" alt="arr_down"></button>
+                    <div class="details">
+                        <p id="details2">Наша команда виконувала ремонт смарт-квартири на 42м2. Кінцевий результат:
+                            покриття підлоги: ламінат  в спальні та кухні;
+                            покриття стін: фарба і плитка у санвузлі;
+                            вид стелі:  однорівнева бетонна покрита фарбою.</p>
+                    </div>
             </div>
         </div>
+        </div>
+    </section>
+    <section id="our-projects">
+        <div class="container">
+            <div class="project3">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_3.1.avif" type="image/avif">
+                            <source srcset="img/project_3.1.webp" type="image/webp">
+                            <img src="img/project_3.1.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_3.2.avif" type="image/avif">
+                            <source srcset="img/project_3.2.webp" type="image/webp">
+                            <img src="img/project_3.2.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_3.3.avif" type="image/avif">
+                            <source srcset="img/project_3.3.webp" type="image/webp">
+                            <img src="img/project_3.3.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="swiper-button-prev3 btn-prev"></div>
+                <div class="swiper-pagination3"></div>
+                <div class="swiper-button-next3 btn-next"></div>
+            </div>
+            <div class="swiper-info">
+                <h3>ЖК Seven</h3>
+                <div>
+                    <img src="/img/room_icon.svg" alt="icon">
+                    <p>Ремонт ванної кімнати</p>
+                </div>
+                <div>
+                    <img src="/img/sqare_icon.svg" alt="">
+                    <p>Площа - 8м<sup>2</sup></p>
+                </div>
+                    <button class="btn" id="details-btn3">Деталі <img src="img/arr_down.svg" alt="arr_down"></button>
+                    <div class="details">
+                        <p id="details3" class="show-details">
+                            На даному об'єкті ми робили лише санвузлі  власнику сподобалось наше минуле рішення розмістивши в санвузлі  ванну та душову результат нашої роботи власника приголомшив і він залишився задоволеним нашою роботою.</p>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="our-projects">
+        <div class="container">
+            <div class="project4">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_4.1.avif" type="image/avif">
+                            <source srcset="img/project_4.1.webp" type="image/webp">
+                            <img src="img/project_4.1.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_4.2.avif" type="image/avif">
+                            <source srcset="img/project_4.2.webp" type="image/webp">
+                            <img src="img/project_4.2.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_4.3.avif" type="image/avif">
+                            <source srcset="img/project_4.3.webp" type="image/webp">
+                            <img src="img/project_4.3.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_4.4.avif" type="image/avif">
+                            <source srcset="img/project_4.4.webp" type="image/webp">
+                            <img src="img/project_4.4.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_4.5.avif" type="image/avif">
+                            <source srcset="img/project_4.5.webp" type="image/webp">
+                            <img src="img/project_1.5.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_4.6.avif" type="image/avif">
+                            <source srcset="img/project_4.6.webp" type="image/webp">
+                            <img src="img/project_4.6.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_4.7.avif" type="image/avif">
+                            <source srcset="img/project_4.7.webp" type="image/webp">
+                            <img src="img/project_4.7.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="swiper-button-prev4 btn-prev"></div>
+                <div class="swiper-pagination4"></div>
+                <div class="swiper-button-next4 btn-next"></div>
+            </div>
+            <div class="swiper-info">
+                <h3>ЖК Нова Англія</h3>
+                <div>
+                    <img src="/img/room_icon.svg" alt="icon">
+                    <p>Кількість кімнат - 2</p>
+                </div>
+                <div>
+                    <img src="/img/sqare_icon.svg" alt="">
+                    <p>Площа - 58м<sup>2</sup></p>
+                </div>
+                    <button class="btn" id="details-btn4">Деталі <img src="img/arr_down.svg" alt="arr_down"></button>
+                    <div class="details">
+                        <p id="details4">Досить не звичайний об'єкт в нашому портфоліо оскільки наші дизайнери намагались поєднати майже не поєднувальне  два стилі як класику в прояві ліпнин та функціоналізм від чого сучасна сім'я не може відмовитись. По даному проєкту ви можете спостерігати як ми виходимо з кожної проблемної ситуації з високо піднятою головою.</p>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="our-projects">
+        <div class="container">
+            <div class="project5">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_5.1.avif" type="image/avif">
+                            <source srcset="img/project_5.1.webp" type="image/webp">
+                            <img src="img/project_5.1.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_5.2.avif" type="image/avif">
+                            <source srcset="img/project_5.2.webp" type="image/webp">
+                            <img src="img/project_1.2.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_5.3.avif" type="image/avif">
+                            <source srcset="img/project_5.3.webp" type="image/webp">
+                            <img src="img/project_5.3.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_5.4.avif" type="image/avif">
+                            <source srcset="img/project_5.4.webp" type="image/webp">
+                            <img src="img/project_5.4.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_5.5.avif" type="image/avif">
+                            <source srcset="img/project_5.5.webp" type="image/webp">
+                            <img src="img/project_5.5.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_5.7.avif" type="image/avif">
+                            <source srcset="img/project_5.7.webp" type="image/webp">
+                            <img src="img/project_5.7.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="img/project_5.8.avif" type="image/avif">
+                            <source srcset="img/project_5.8.webp" type="image/webp">
+                            <img src="img/project_5.8.jpg" alt="projects_img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="swiper-button-prev5 btn-prev"></div>
+                <div class="swiper-pagination5"></div>
+                <div class="swiper-button-next5 btn-next"></div>
+            </div>
+            <div class="swiper-info">
+                <h3>ЖК Республіка</h3>
+                <div>
+                    <img src="/img/room_icon.svg" alt="icon">
+                    <p>Кількість кімнат - 2</p>
+                </div>
+                <div>
+                    <img src="/img/sqare_icon.svg" alt="">
+                    <p>Площа - 55м<sup>2</sup></p>
+                </div>
+                    <button class="btn" id="details-btn5">Деталі <img src="img/arr_down.svg" alt="arr_down"></button>
+                    <div class="details">
+                        <p id="details5">На данному проекті ми працювали із готовим дизайнерстьким проектом та виконували такі роботи:
+                            Покриття підлоги: плитка та ламінат;
+                            Покриття стін: фарба, декоративна штукатурка, шпалери та плитка;
+                            Вид стелі — гіпсокартонна дворівневий з великою кількістю світла.</p>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contacts">
+        <div class="container">
+            <h2 class="title-line-element">Контакти</h2>
+            <div>
+                <p>Відповідаємо за весь ремонт в комплексі та не відволікаємо замовника від важливих справ.
+                    Для співпраці з нами телефонуйте за номером
+                    <br> +38 (063) 59 91 253 або залишайте свої дані в формі зворотньго звязку і наші менеджери
+                    звяжуться з вами.
+                </p>
+                <form class="contacts" action="#">
+                    <input type="text" name="username" id="username" placeholder="Ім'я">
+                    <input type="tel" name="tel" id="tel" placeholder="Номер телефону">
+                    <button class="btn" type="submit">Залишити заявку</button>
+                </form>
+            </div>
         </div>
     </section>
     <footer id="footer">
@@ -234,7 +463,7 @@
         </div>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
 </body>
 
 </html>

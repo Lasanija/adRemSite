@@ -2,6 +2,8 @@
   --primary-color: #2853ce;
   --secondary-color: red;
   --bg-gray: #f0f0f0;
+  --swiper-theme-color:var(--primary-color);
+  --img-width:100%
 }
 * {
   margin: 0;
@@ -405,6 +407,8 @@ a.active {
   width: 100px;
   top:50px;
 }
+
+/* for contacts section */
 form.contacts {
   display: flex;
   flex-direction: column;

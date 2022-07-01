@@ -18,48 +18,6 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
-
-const project1 = new Swiper(".project1", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: false,
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true,
-  },
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination1",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next1",
-    prevEl: ".swiper-button-prev1",
-  },
-});
-
-const project2 = new Swiper(".project2", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: false,
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true,
-  },
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination2",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
 //arrow up and down
 const footer = document.getElementById("footer").offsetTop;
 const navbar = document.getElementById("navbar").offsetTop;
@@ -97,5 +55,8 @@ menu.querySelectorAll("a").forEach(a => {
 //send request button
 const contacts = document.getElementById('contacts').offsetTop
 document.getElementById('request').addEventListener('click', ()=>{
+  window.scrollTo({top:contacts, behavior:"smooth"})
+})
+document.getElementById('consult').addEventListener('click', ()=>{
   window.scrollTo({top:contacts, behavior:"smooth"})
 })
