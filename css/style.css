@@ -53,6 +53,8 @@ section {
   color: #fff;
 }
 .light-btn {
+  padding: 20px 40px;
+  width: fit-content;
   background-color: transparent;
   color: var(--primary-color);
   border-color: var(--primary-color);
@@ -368,12 +370,6 @@ a.active {
 }
 .swiper-info p {
   padding-left: 15px;
-}
-#our-projects a:hover{
-  color: #fff;
-}
-#our-projects a{
-  color: var(--primary-color);
 }
 /* for swiper navigation */
 .navigation{
