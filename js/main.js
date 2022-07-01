@@ -60,3 +60,11 @@ document.getElementById('request').addEventListener('click', ()=>{
 document.getElementById('consult').addEventListener('click', ()=>{
   window.scrollTo({top:contacts, behavior:"smooth"})
 })
+//preloader
+window.onload = function () {
+  document.body.classList.add('loaded_hiding');
+  window.setTimeout(function () {
+    document.body.classList.add('loaded');
+    document.body.classList.remove('loaded_hiding');
+  }, 500);
+}
