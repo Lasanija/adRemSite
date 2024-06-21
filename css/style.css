@@ -478,14 +478,11 @@ form.contacts {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 20px 10px 0px;
+
 }
-#contacts .container div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  justify-content: left;
-  align-items: flex-start;
-  padding: 50px;
+ #contacts .container div p {
+  padding: 30px;
   border-bottom-left-radius: 50px;
   border-top-left-radius: 50px;
   background-color: var(--bg-gray);

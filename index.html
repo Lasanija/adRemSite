@@ -30,10 +30,10 @@
                 <div class="burger" id="burger" title="menu"></div>
             </div>
             <ul class="menu" id="menu">
-                <li><a href="#services">Послуги</a></li>
-                <li><a href="#how-we-work">Як ми працюємо</a></li>
-                <li><a href="#our-projects">Наші проекти</a></li>
-                <li><a href="#contacts">Контакти</a></li>
+                <li><a href="#services" class="menu-item">Послуги</a></li>
+                <li><a href="#how-we-work" class="menu-item">Як ми працюємо</a></li>
+                <li><a href="#our-projects" class="menu-item">Наші проекти</a></li>
+                <li><a href="#contacts" class="menu-item">Контакти</a></li>
             </ul>
         </nav>
         <div class="add-nav-wrapper">
@@ -275,9 +275,9 @@
                     <br> +38 (063) 59 91 253 або залишайте свої дані в формі зворотньго звязку і наші менеджери
                     звяжуться з вами.
                 </p>
-                <form class="contacts" action="#">
-                    <input type="text" name="username" id="username" placeholder="Ім'я">
-                    <input type="tel" name="tel" id="tel" placeholder="Номер телефону">
+                 <form action="#" class="contacts callback-form">
+                    <input required type="text" name="username" id="username" placeholder="Ім'я">
+                    <input required type="tel" name="tel" id="tel" placeholder="380ХХХХХХХХХ" pattern="[0-9]{12}">
                     <button class="btn" type="submit">Залишити заявку</button>
                 </form>
             </div>
@@ -308,6 +308,7 @@
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/callback.js"></script>
 </body>
 
 </html>
